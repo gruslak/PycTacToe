@@ -3,7 +3,7 @@ import random
 player_mark = ""
 computer_mark = ""
 playground_content = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-game_over = False;
+game_over = False
 
 
 # prints the start screen
