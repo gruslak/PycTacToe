@@ -9,16 +9,16 @@ if __name__ == '__main__':
         if player_mark == "X":
             print_playground()
             player_input()
-            if game_over:
+            if functions.game_over:
                 break
             computer_input()
         else:
             computer_input()
-            if game_over:
+            if functions.game_over:
                 break
             print_playground()
             player_input()
-
+    x = input()
 
 
 
