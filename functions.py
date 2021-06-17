@@ -1,4 +1,5 @@
 import random
+import os
 
 player_mark = ""
 computer_mark = ""
@@ -32,6 +33,11 @@ def print_playground():
     print('|___7___| |___8___| |___9___|')
 
 
+#clear screen
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 # changes the team-mark of the player
 def change_player_mark():
     global player_mark
@@ -56,6 +62,7 @@ def player_input():
             user_input -= 1
             if is_valid_number(user_input):
                 playground_content[user_input] = player_mark
+                clear()
                 game_over_checker()
                 break
             else:
