@@ -3,9 +3,8 @@ import os
 
 player_mark = ""
 computer_mark = ""
-playground_content = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-game_over = False
-
+playground_content = ""
+game_over = ""
 
 # prints the start screen
 def print_start_screen():
@@ -149,3 +148,16 @@ def game_over_checker():
             game_over = True
             print_playground()
             print("Game over! Its a draw.")
+
+
+#set default variables
+def set_default():
+    global player_mark
+    global computer_mark
+    global playground_content
+    global game_over
+
+    player_mark = ""
+    computer_mark = ""
+    playground_content = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    game_over = False
